@@ -1,0 +1,86 @@
+$(document).ready(function () {
+	mainPop();
+	mobilePop();
+
+$(document)
+        .on('click', '.btn-story', function(e){
+     	   if ($("html").hasClass("vm-small")) {
+     		   var navDisplay = $(".nav-story").css("display");
+     		   if(navDisplay == 'block'){
+     			   document.all['divpop'].style.display = "none";
+     			$(".vm-small .nav-story").css("top", "auto");   
+		   }
+     	     }
+        });
+});
+
+    function mobilePop(){
+		if($("html").hasClass("vm-small")) {
+			$(".popVio").css("height","128px");
+		}
+	
+	}
+
+	function mainPop(){
+		initPage_Today();
+/*
+		var nowURL = window.location.href;
+   		if(nowURL.indexOf("main.do") > 0){
+        		initPage_Today();
+    		}else{
+        		 document.all['divpop'].style.display = "none";
+    		}
+*/
+	}
+
+	function btn_notice() {
+		alert('대통령기록관에서 보존중인 "역대 대통령 웹기록물"로서, 자료의 열람만 가능하며 수정/추가/삭제는 불가능합니다.');
+		return false;
+	}
+
+	function closeWin() { 
+		var only_id = "www.president.go.kr";
+
+		setCookie( only_id, "no" , 1); 
+		document.all['divpop'].style.display = "none";
+		$(".gov-report").css('grid-template-rows', '156px 1fr 60px');
+	}	
+	
+	function setCookie(name, value, expiredays){
+		var todayDate = new Date();
+		todayDate.setDate(todayDate.getDate() + expiredays);
+		document.cookie = name + "=" + escape( value ) + "; path=/; expires=" + todayDate.toGMTString() + ";"
+	}
+
+	function getCookie( name ) {
+		var nameOfCookie = name + "="; 
+		var x = 0; 
+		while ( x <= document.cookie.length ) {
+			var y = (x+nameOfCookie.length); 
+			if ( document.cookie.substring( x, y ) == nameOfCookie ) {
+				if ( (endOfCookie=document.cookie.indexOf( ";", y )) == -1 ) 
+					endOfCookie = document.cookie.length;
+				return unescape( document.cookie.substring( y, endOfCookie ) ); 
+			} 
+			x = document.cookie.indexOf( " ", x ) + 1; 
+			if ( x == 0 ) break;
+		} 
+		return ""; 
+	}
+
+	//오늘하루 팝업창 안띄우기
+	function initPage_Today(){
+		var only_id = "www.president.go.kr";
+		var cookie = getCookie(only_id);
+//		console.log("only_id="+only_id);
+//		console.log("cookie="+cookie);
+
+		if(getCookie(only_id).replace(/\s*$/, "") != "no"){
+			$(".gov-report").css('grid-template-rows', 'auto 1fr 60px');
+			$(".nav-story").css('top','298px');
+		}else{
+			document.all['divpop'].style.display = "none";
+		}
+		return;
+	}
+//	initPage_Today();

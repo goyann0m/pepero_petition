@@ -1,0 +1,1108 @@
+@charset "utf-8";
+
+
+
+
+
+/* 갤러리 페이지 */
+.sub_bg1{
+	width:100%;
+	height:500px;
+	position: relative;
+	background-image:url(../img/subGallbg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.sub_bg1 h3{
+	position: absolute;
+	bottom: 55px;
+    left: 10%;
+	font-size:46px;
+	font-weight:600;
+	color:#fff;
+}
+.sub_bg2{
+	width:100%;
+	height:500px;
+	position: relative;
+	background-image:url(../img/subTolkbg.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+.sub_bg2 h3{
+	position: absolute;
+	bottom: 55px;
+    left: 10%;
+	font-size:46px;
+	font-weight:600;
+	color:#fff;
+}
+
+
+
+
+.sub_navi,
+.sub_navi1{
+	overflow:hidden;
+	background-color: #fff;
+}
+.sub_navi ul,
+.sub_navi1 ul{
+	overflow: hidden;
+    width: 100%;
+	height:59px;
+    text-align: center;
+}
+.sub_navi ul li{
+	float:left;
+    width: 33.27%;
+	background-image:url(../img/sub_line.jpg);
+	background-repeat:no-repeat;
+	background-position: 0 16px;
+    border-bottom: 1px solid #7f7f7f;
+    height: 58px;
+}
+.sub_navi ul li:first-child,
+.sub_navi1 ul li:first-child{
+	background:none;
+}
+.sub_navi ul li a,
+.sub_navi1 ul li a{
+	font-size: 19px;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    height: 55px;
+    width: 100%;
+    line-height: 62px;
+	color: #8e8e8e;
+}
+.sub_navi ul li a:hover,
+.sub_navi1 ul li a:hover{
+	border-bottom: 5px solid #0a1645;
+	color: #0a1645;
+}
+.sub_navi ul li a.btn_on,
+.sub_navi1 ul li a.btn_on{
+	border-bottom: 5px solid #0a1645;
+	color: #0a1645;
+}
+
+
+.sub_navi1 ul li{
+	float:left;
+    width: 50%;
+	background-image:url(../img/sub_line.jpg);
+	background-repeat:no-repeat;
+	background-position: 0 16px;
+    border-bottom: 1px solid #7f7f7f;
+    height: 58px;
+}
+
+
+
+
+
+
+
+
+
+.sub_container{
+	background-color:#e8e8e8;
+}
+.sub_container1{
+	background-color:#fff;
+}
+.sub_container2{
+	background-color:#f0f3fa;
+}
+
+.sub_gal{
+	width: 100%;
+    max-width: 1280px;
+	overflow:hidden;
+    margin: 0 auto;
+}
+.sub_gal .sub_gal_area{
+	padding: 60px 0 100px 0;
+	text-align: center;
+	overflow:hidden;
+}
+.sub_gal .sub_gal_area li{
+	float:left;
+    padding-bottom: 0;
+    width: 30%;
+    background-color: #fff;
+    margin: 0px 1.5% 40px 1.5%;
+	height: 427px;
+}
+.sub_gal .sub_gal_area li a{
+	display: block;
+	/*
+    transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+	*/
+    padding: 7px;
+    padding-bottom: 0;
+}
+
+.sub_gal .sub_gal_area li a:hover{
+	border-bottom:7px solid #0a1645;
+	text-decoration:none;
+	color:#333;
+}
+.sub_gal .sub_gal_area li a .gal_box{
+	text-align: center;
+}	
+.gal_box .gal_photo{
+	width:100%;
+	height:200px;
+	overflow:hidden;
+	position: relative;
+	/* height:auto; */
+	background-color:#000;
+}
+.gal_box .gal_photo img{
+	position: absolute;
+	top:50%;
+	left:50%;
+	max-width:100%;
+	height:auto;
+	-webkit-transform:translate(-50%,-50%);
+	-ms-transform:translate(-50%,-50%);
+	transform:translate(-50%,-50%);
+}
+.gal_box .gal_txtArea{
+	padding: 30px 10px;
+	height:153px;
+}
+.gal_box .gal_txtArea h2{
+	font-size: 24px;
+    font-weight: 500;
+    width: 90%;
+    line-height: 29px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+	color:#0a1645;
+
+	height: 56px;
+    overflow: hidden;
+    white-space: normal;
+	word-wrap:break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.gal_box .gal_txtArea .gal_data{
+	font-size: 18px;
+    margin-bottom: 20px;
+	color:#333;
+}
+.gal_box .gal_txtArea .gal_btn{}
+
+
+
+
+
+
+
+
+/* 동영상 페이지 */
+
+.bast_slide{
+	width:100%;
+	max-width: 1760px;
+	/* max-width: 1000px; */
+    margin: 0 auto;
+	overflow:hidden;
+}
+.video_title{
+	text-align: center;
+    padding: 15% 0 85px 0;
+}
+.video_title p{
+	font-size: 26px;
+    letter-spacing: 9px;
+    margin-bottom: 8px;
+    color: #585858;
+}
+.video_title h3{
+	font-size: 50px;
+}
+
+.video_txt{
+	width: 100%;
+	height: 190px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 20px 0;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.video_txt_l{
+	display: block;
+}
+.video_txt_l p{
+	font-size: 25px;
+    color: #777;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.video_txt_l h4{
+	font-size: 45px;
+	color:#1d1d1d;
+	line-height:46px;
+	white-space:nowrap;
+	overflow: unset;
+	text-overflow:ellipsis;
+}
+.video_txt_l h4 a:focus, .video_txt_l h4 a:active {
+	box-shadow: 0 0 0 2px blue inset;
+}
+
+.video_txt_r{
+	display: block;
+    line-height: 22px;
+    margin-top: 30px;
+    color: #1d1d1d;
+}
+.txt_r_Txt{
+	font-size: 17px;
+	width:100%;
+    color: #0b1745;
+    margin-bottom: 8px;
+    height: 46px;
+    overflow: hidden;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.video_iconBtn{}
+.iconBtn{
+	display: inline-block;
+    width: 226px;
+}
+.iconBtn li{
+	float: left;
+    margin-right: 12px;
+}
+.iconBtn li a{
+	text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+}
+.iconBtn li a:hover .icon_count{
+	color:#0b1745;
+}
+.iconBtn li a:hover .Btn_icon{
+	background-position:0 -63px;
+}
+
+
+
+.Btn_icon{
+	width: 34px;
+    height: 34px;
+    float: left;
+	color: transparent;
+	text-indent: 200%;
+    outline: none;
+}
+
+.video_txt_r .icon_count{
+	font-size: 15px;
+    color: #a2a2a2;
+    float: left;
+	margin-top: 8px;
+}
+
+.icon_up{
+	background-image:url(../img/video_icon1.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.icon_down{
+	background-image:url(../img/video_icon2.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+.icon_talk{
+	background-image:url(../img/video_icon3.png);
+	background-repeat:no-repeat;
+	background-position:0px 0px;
+}
+
+
+
+
+
+.snsBtn{
+	display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    margin-top: 7px;
+}
+.snsBtn li{
+	float: left;
+}
+.snsBtn li:first-child{}
+.snsBtn li a{
+	display: block;
+	text-decoration:none;
+}
+
+.snsBtn li a:hover .Sns_icon{
+	background-position:0 -69px;
+}
+
+.snsBtn li a:hover .sns_share{
+	background-color:#0b1745;
+}
+
+.sns_share{	
+	width: 90px;
+    text-align: center;
+    background-color: #afafaf;
+    border-radius: 27px;
+    padding: 1px 0px 0px 0px;
+    background-image: url(../img/share_icon.png);
+    background-repeat: no-repeat;
+    background-position: 57px 3px;
+}
+.sns_share p{
+	font-size: 13px;
+    color: #fff;
+    font-weight: 400;
+    display: inline-block;
+    padding-right: 19px;
+}
+
+.Sns_icon{
+	width: 34px;
+    height: 25px;
+	color: transparent;
+	text-indent: 200%;
+    outline: none;
+}
+
+.icon_face{
+	background-image:url(../img/sns_icon1.png);
+	background-repeat:no-repeat;
+	background-position:0px -6px;
+}
+.icon_twitter{
+	background-image:url(../img/sns_icon2.png);
+	background-repeat:no-repeat;
+	background-position:0px -6px;
+}
+.icon_kakastory{
+	background-image:url(../img/sns_icon3.png);
+	background-repeat:no-repeat;
+	background-position:0px -6px;
+}
+.icon_share{
+	background-image:url(../img/sns_icon4.png);
+	background-repeat:no-repeat;
+	background-position:0px -6px;
+}
+
+
+
+
+
+
+.video_title1{
+	text-align: center;
+    margin-top: 42px;
+    border-bottom: 1px solid #131944;
+    position: relative;
+    height: 50px;
+	margin-bottom: 65px;
+}
+.video_title1 p{
+	font-size: 40px;
+    position: absolute;
+    background-color: #fff;
+    width: 580px;
+    left: 50%;
+    top: 30px;
+    margin-left: -280px;
+    color: #131944;
+}
+
+
+
+
+
+
+
+
+
+.sub_listVideo{
+   padding-bottom:100px;
+}
+.sub_video1{
+	overflow:hidden;
+	padding: 70px 0;
+}
+.list_board_1{
+	width:1300px;
+	margin:0 auto;
+}
+.list_board_1 .list_txt{
+	float: left;
+    width: 720px;
+    margin-top: 30px;
+}
+.list_txt a{
+	text-decoration:none;
+	display: block;
+}
+.list_txt_title{
+	display: inline-block;
+	position:relative;
+    width: 100%;
+    border-bottom: 2px solid #131944;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+.list_txt_title h3{
+	float: left;
+    font-size: 35px;
+    width: 70%;
+	line-height:44px;
+    color: #131944;
+}
+.list_more{
+    border: 2px solid #131944;
+    padding: 8px 30px;
+    font-size: 15px;
+    letter-spacing: 5px;
+    color: #131944;
+
+	position: absolute;
+	bottom:15px;
+	right:0;
+}
+.list_more .moreIcon{
+	float: right;
+    margin-left: 7px;
+	-webkit-transition: -webkit-transform 0.65s;
+	transition: transform 0.65s;
+
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+.list_txt_cont{
+	font-size: 20px;
+    line-height: 27px;
+    margin-bottom: 12px;
+    height: 57px;
+	color:#5a5a5a;
+    overflow: hidden;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.list_txt_date{
+	font-size: 16px;
+    color: #929292;
+}
+
+.list_board_1 .list_video{
+	float: right;
+    width: 485px;
+    position: relative;
+}
+.list_video .list_video_box{
+	background-color: #464646;
+    height: 260px;
+}
+.list_video .list_videoPly_btn{
+	position: absolute;
+    top: 40%;
+    width: 82px;
+    left: 50%;
+    margin-left: -41px;
+}
+
+
+
+
+
+
+.sub_video2{
+	overflow:hidden;
+	padding: 70px 0;
+	background-color:#eeeeee;
+}
+.list_board_2{
+	width:1300px;
+	margin:0 auto;
+}
+.list_board_2 .list_txt{
+	float: right;
+    width: 720px;
+    margin-top: 20px;
+}
+
+.list_txt a:hover{
+	text-decoration:underline;
+	color:#dadada;
+}
+.list_txt a:hover .moreIcon{
+	-webkit-transform: translate3d(10px,0,0);
+	transform: translate3d(10px,0,0);
+}
+
+.list_board_2 .list_video{
+	float: left;
+    width: 485px;
+    position: relative;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 토론 */
+.sub_discussion{
+	width: 100%;
+    max-width: 1280px;
+	overflow:hidden;
+    margin: 0 auto;
+	padding-bottom:110px;
+}
+.discussion_area{
+	text-align: center;
+	margin-bottom:50px;
+}
+.discussion_area .discussion_list{
+	display: inline-block;
+    position: relative;
+    width: 30%;
+    height: 645px;
+    margin: 0px 20px;
+}
+.discussion_area .discussion_list a{
+	display: block;
+    text-decoration: none;
+}
+
+.ag_ag{}
+.ag_agBox{
+	overflow: hidden;
+    width: 100%;
+    position: relative;
+    height: 380px;
+}
+
+.agree{
+	width: 70%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+.agree .agree_txt{
+	font-size: 18px;
+    color: #139bda;
+    font-weight: bold;
+	margin-left: 34%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.agree img{
+	width:95%;
+	float:left;
+}
+.agree .agree_gauge{
+	background-color: #3dc0fd;
+	float:left;
+	width:100%;
+}
+.agree .agree_gauge p{
+	color: #fff;
+    font-size: 18px;
+    text-align: left;
+    padding: 10px 10px 10px 20px;
+}
+
+
+
+.against{
+	width: 30%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.against .against_txt{
+	font-size: 18px;
+    color: #fe8b9a;
+    font-weight: bold;
+	margin-right: 34%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.against img{
+	width:95%;
+    float:right;
+}
+.against .against_gauge{
+	background-color: #fe8b9a;
+	float:right;
+	width:100%;
+}
+.against .against_gauge p{
+	color: #fff;
+    font-size: 18px;
+    text-align: right;
+    padding: 10px 20px 10px 10px;
+}
+
+.ag_agTxt_area{
+	padding: 30px 30px 40px 30px;
+    background-color: #dceaff;
+    border-bottom: 4px solid #0b1745;
+	position: relative;
+}
+.ag_agTxt_area h3{
+	text-align: center;
+    font-size: 22px;
+    color: #0b1745;
+    margin-bottom: 5px;
+
+    overflow: hidden;
+    /* white-space: normal; */
+    white-space: nowrap;
+    /* display: -webkit-box; */
+    /* -webkit-line-clamp: 2; */
+    /* -webkit-box-orient: vertical; */
+	text-overflow:ellipsis;
+}
+.ag_agTxt_area ul{
+	text-align: center;
+    margin-bottom: 20px;
+}
+.ag_agTxt_area ul li{
+	display: inline-block;
+    font-size: 14px;
+    color: #7b8ba2;
+    border-left: 1px solid #7b8ba2;
+    margin-left: 5px;
+    padding-left: 8px;
+}
+.ag_agTxt_area ul li:first-child{
+	padding: 0;
+    border: 0;
+}
+.ag_agTxt_area .ag_agtxt{
+	font-size: 14px;
+    line-height: 20px;
+    color: #0b1745;
+	text-align:left;
+
+    height: 100px;
+    overflow: hidden;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+}
+
+.ag_agTxt_area .ag_agBtn{
+	position: absolute;
+    bottom: 10px;
+    right: 25px;
+	margin: 0;
+	padding: 0;
+}
+.ag_agTxt_area .ag_agBtn li{
+	float: left;
+    margin: 0 5px;
+	border:0;
+}
+.ag_agTxt_area .ag_agBtn li a{}
+.ag_agTxt_area .ag_agBtn li a i{
+	font-size: 20px;
+	color: #72747b;
+}
+.ag_agTxt_area .ag_agBtn li a:hover i{
+	color:#0b1745;
+}
+
+
+.ag_btn{
+	text-align:center;
+	margin:80px 0;
+}
+.ag_btn a{
+	text-decoration: none;
+    background: #0b1745;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 17px 100px;
+}
+
+
+
+
+
+
+
+
+
+.listPage{
+	text-align:center;
+}
+.listPage li{
+	display: inline-block;
+    vertical-align: top;
+    margin: 0 5px;
+}
+.listPage li a{
+	color: #0b1745;
+	border: 1px solid #0b1745;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 10px;
+    height: 17px;
+    display: block;
+    text-decoration: none;
+}
+.listPage li a:hover{
+	background-color:#0b1745;
+	color:#fff;
+}
+.listPage li a.c_page_on{
+	background-color:#0b1745;
+	color:#fff;
+}
+
+.listPage li a span{
+	font-family:dotum,sans-serif;
+	letter-spacing: -3px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1300px){ /* 1300 */
+	/* sub1 */
+	.sub_bg1 {background-position: 67% 0;}
+
+
+
+
+	/* sub2 */
+	.video_title {padding: 15% 0 0px 0;}
+	.video_title1 {margin-top: 0px;}
+	.video_txt{
+		margin-top: -40px;
+		width: 80%;
+	}
+	.video_txt_l {}
+	.video_txt_r {}
+	.sub_video1,
+	.sub_video2{padding: 70px 20px;}
+	.list_board_1,
+	.list_board_2{width:100%;}
+	.list_board_1 .list_txt,
+	.list_board_2 .list_txt{
+		width: 51%;
+	}
+
+
+
+
+	/* sub3 */
+	.sub_bg2 {background-position: 43% 0;}
+}
+
+
+
+@media screen and (max-width: 1024px){ /* 아이패드 가로 */
+	/* sub1 */
+	.sub_gal .sub_gal_area li{height:406px;}
+	.gal_box .gal_photo{height:170px;}
+	.gal_box .gal_txtArea{height:160px;}
+
+
+
+	/* sub2 */
+	.video_title {padding: 20% 0 0px 0;}
+	.video_title p {font-size: 20px;}
+	.video_title h3 {font-size: 40px;}
+	.video_txt {
+		margin-top: -75px;
+		width: 98%;
+	}
+	.list_board_1 .list_txt,
+	.list_board_2 .list_txt{
+		width: 46%;
+		margin-top: 30px;
+	}
+	.video_title1 {margin-bottom: 30px;}
+	.list_txt_title h3 {
+		font-size: 32px;
+		line-height:40px;
+	}
+	.list_txt_title .list_more {
+		padding: 8px 17px;
+		font-size: 13px;
+	}
+	.list_txt_cont {font-size: 18px;}
+	.video_txt {width: 71%;}
+	.video_txt_l {}
+	.video_txt_l p {font-size: 20px;}
+	.video_txt_l h4 {font-size: 30px;}
+	.video_txt_r {margin-bottom:17px;}
+
+
+
+	/* sub3 */
+	.sub_bg2 {background-position: 49% 0;}
+}
+
+
+@media screen and (max-width: 800px){ /* g패드 */
+	/* sub1 */
+	.sub_gal .sub_gal_area li{height: 375px;}
+	.gal_box .gal_photo{height:148px;}
+	.gal_box .gal_txtArea{height:153px;}
+	
+
+
+
+	/* sub2 */
+	.video_title {padding: 13% 0 40px 0;}
+	.video_txt {
+		margin-top: 0px;
+		width: 98%;
+	}
+	.video_txt_l {}
+	.video_txt_l p {font-size: 16px;}
+	.video_txt_l h4 {font-size: 22px;}
+	.video_txt_r {margin-top:15px;}
+	.txt_r_Txt {font-size: 15px;}
+	.list_board_1 .list_txt, 
+	.list_board_2 .list_txt {width: 45%;}
+	.list_txt_title h3 {
+		font-size: 23px;
+		line-height:32px;
+	}
+	.list_txt_title .list_more {
+		padding: 8px 10px;
+		font-size: 12px;
+		letter-spacing: 3px;
+	}
+	.list_more .moreIcon {margin-left: 2px;}
+	.list_txt a:hover .moreIcon {
+		-webkit-transform: translate3d(5px,0,0);
+		transform: translate3d(5px,0,0);
+	}
+	.list_txt_cont {
+		font-size: 16px;
+		line-height: 23px;
+		height: 88px;
+		-webkit-line-clamp: 4;
+	}
+	.list_txt_date {font-size: 14px;}
+	.list_board_1 .list_video,
+	.list_board_2 .list_video{width: 50%;}
+	.list_video .list_video_box{width:100%;}
+	.list_video .list_video_box {height: 210px;}
+
+
+
+
+
+
+	/* sub3 */
+	.sub_bg2 {background-position: 58% 0;}
+	.sub_discussion{max-width: inherit;}
+	.discussion_area .discussion_list {
+		width: 40%;
+		height: 620px;
+	}
+	.ag_agTxt_area .ag_agtxt {height: 101px;}
+	.ag_agBox {height: 350px;}
+
+}
+
+
+@media screen and (max-width: 768px){ /* 아이패드 */
+	/* sub1 */
+	.sub_gal .sub_gal_area li{height: 368px;}
+	.gal_box .gal_photo{height:140px;}
+
+
+
+	.video_txt_l {}
+	.video_txt_r {}
+}
+
+
+@media screen and (max-width: 736px){ /* 아이폰+가로 */
+	.sub_gal .sub_gal_area li {height: 434px;}
+}
+
+@media screen and (max-width: 414px){ /* 아이폰+ */
+	/* sub1 */
+	.sub_gal .sub_gal_area {padding: 25px 0 0px 0;}
+	.sub_gal .sub_gal_area li {
+		width: 96%;
+		margin: 0px 2% 40px 2%;
+		height:455px;
+	}
+	.gal_box .gal_photo{height:225px;}
+	.gal_box .gal_txtArea{height:155px;}
+	.sub_bg1 h3 {font-size: 32px;}
+
+
+	/* sub2 */
+	.video_title {padding: 25% 0 20px 0;}
+	.video_title h3 {font-size: 25px;}
+	.video_title p {font-size: 12px;}
+	.txt_r_Txt{line-height:22px;}
+
+	.video_title1 p {
+		font-size: 22px;
+		width: 280px;
+		left: 50%;
+		top: 37px;
+		margin-left: -140px;
+	}
+	.video_txt{
+		height: auto;
+		margin-top: 0;
+	}
+	.video_txt_l {
+		padding: 0;
+		border-bottom: 1px solid #0b1745;
+		margin-bottom: 10px;
+		padding-bottom: 10px;
+	}
+	.video_txt_r {margin-top:10px;}
+	.iconBtn {width: 100%;}
+	.iconBtn li {margin-right: 25px;}
+	.snsBtn {
+		width: 100%;
+		margin-top: 14px;
+	}
+	.snsBtn li {
+		margin-left: 5px;
+		margin-top:4px;
+	}
+	.snsBtn li:first-child {
+		border: 0;
+		padding: 0;
+		margin:0;
+	}
+
+	.sub_video1, .sub_video2 {padding: 25px 20px;}
+	.list_board_1 .list_txt, 
+	.list_board_2 .list_txt {
+		width: 100%;
+		margin: 0;
+	}
+	.list_txt_title h3{
+		line-height:25px;
+		width:66%;
+		font-size:20px;
+	}
+	.list_board_1 .list_video, 
+	.list_board_2 .list_video {
+		width: 100%;
+	}
+	.list_txt_cont {
+		font-size: 13px;
+		line-height: 20px;
+		height: 39px;
+		-webkit-line-clamp: 2;
+	}
+	.list_txt_date {
+		font-size: 12px;
+		margin-bottom: 12px;
+	}
+	.video_txt_r {line-height:30px;}
+	.video_txt_l p{
+		margin-bottom: 0px;
+	}
+	.sns_share{	
+		background-position: 57px 9px;
+	}
+
+
+
+
+	/* sub3 */
+	.sub_bg2 {background-position: 64% 0;}
+	.discussion_area .discussion_list {
+		width: 88%;
+		height: 600px;
+	}
+	.ag_agTxt_area h3 {
+		font-size: 20px;
+	}
+	.ag_agBox {
+		height: 360px;
+	}
+}
+
+@media screen and (max-width: 375px){ /* 아이폰 */
+	/* sub1 */
+	.sub_gal .sub_gal_area li {}
+	.txt_r_Txt {
+		font-size: 13px;
+		line-height: 18px;
+		height: 34px;
+	}
+	.list_video .list_video_box {height: 160px;}
+
+
+
+	/* sub3 */
+	.discussion_area .discussion_list {
+		height: 622px;
+	}
+}
+
+
+@media screen and (max-width: 360px){ /* 안드로이드 */
+	.sub_gal .sub_gal_area li{height:449px;}
+	.gal_box .gal_photo{height:220px;}
+	.gal_box .gal_txtArea{}
+	.sub_bg1 h3 {}
+	
+}
+
+
+@media screen and (max-width: 350px){ /* 그외 갤럭시2, 아이폰3 */
+	
+}	

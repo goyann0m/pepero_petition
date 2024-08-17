@@ -1,0 +1,355 @@
+/* 20170718 작성자 송지수 */
+
+function funLoad() {
+    var Cheight = $(window).height();
+    $('.fullheight').css({'height': Cheight + 'px'});
+}
+window.onload = funLoad;
+window.onresize = funLoad;
+
+$(window).scroll(function () {
+    var scTop = $(window).scrollTop();
+    head_nav(scTop);
+
+	if(scTop != 0){
+		$('#header').css('top','0px');
+	}else {
+		$('#header').css('top','');
+	}
+});
+function head_nav(scTop) {
+    if (scTop > 1) {
+        $('#header').removeClass('on');
+        $('#header').addClass('on')
+        $('#contents.c_sub').removeClass('on');
+        $('#contents.c_sub').addClass('on')
+    } else {
+        $('#header').removeClass('on');
+        $('#contents.c_sub').removeClass('on');
+    }
+}
+
+(function ($, window, document) {
+    $('#mainmenu_btn').click(function () {
+        $('.h_gnb').stop().toggleClass('on');
+        $('.h_search').stop().removeClass('on');
+        $('.h_logo').stop().toggleClass('on');
+        $('.h_logo').stop().removeClass('color');
+        $('.h_gnb').stop().removeClass('color');
+        $('.cs_navi').stop().toggleClass('off');
+		if($('.h_logo').hasClass('on') === true) {
+			$('.header_new').css('top','0px');
+		}else {
+			$('.header_new').css('top','');
+		}
+    });
+
+    $('#search_btn').click(function () {
+        $('.h_search').stop().toggleClass('on');
+        $('.h_gnb').stop().removeClass('on');
+        $('.h_logo').stop().toggleClass('color');
+        $('.h_logo').stop().removeClass('on');
+        $('.h_gnb').stop().toggleClass('color');
+    });
+
+    $('#heromore_btn').click(function () {
+        $('.cmh_more').stop().toggleClass('on');
+    });
+
+    $('#sitemap .s_btn').click(function () {
+        $('#sitemap').stop().toggleClass('on');
+    });
+
+    $('#cmb_play').click(function () {
+        $('.cm_briefing .cmb_wrap').stop().toggleClass('on');
+    });
+}(jQuery, window, document));
+
+(function ($, window, document) {
+    $('.h_gnb .depth1 li.hg_president button').click(function () {
+        $('.hg_president').stop().toggleClass('on');
+        $('.hg_newsroom').stop().removeClass('on');
+        $('.hg_policy').stop().removeClass('on');
+        $('.hg_community').stop().removeClass('on');
+        $('.hg_cheongwadae').stop().removeClass('on');
+    });
+    $('.h_gnb .depth1 li.hg_newsroom button').click(function () {
+        $('.hg_president').stop().removeClass('on');
+        $('.hg_newsroom').stop().toggleClass('on');
+        $('.hg_policy').stop().removeClass('on');
+        $('.hg_community').stop().removeClass('on');
+        $('.hg_cheongwadae').stop().removeClass('on');
+    });
+    $('.h_gnb .depth1 li.hg_policy button').click(function () {
+        $('.hg_president').stop().removeClass('on');
+        $('.hg_newsroom').stop().removeClass('on');
+        $('.hg_policy').stop().toggleClass('on');
+        $('.hg_community').stop().removeClass('on');
+        $('.hg_cheongwadae').stop().removeClass('on');
+    });
+    $('.h_gnb .depth1 li.hg_community button').click(function () {
+        $('.hg_president').stop().removeClass('on');
+        $('.hg_newsroom').stop().removeClass('on');
+        $('.hg_policy').stop().removeClass('on');
+        $('.hg_community').stop().toggleClass('on');
+        $('.hg_cheongwadae').stop().removeClass('on');
+    });
+    $('.h_gnb .depth1 li.hg_cheongwadae button').click(function () {
+        $('.hg_president').stop().removeClass('on');
+        $('.hg_newsroom').stop().removeClass('on');
+        $('.hg_policy').stop().removeClass('on');
+        $('.hg_community').stop().removeClass('on');
+        $('.hg_cheongwadae').stop().toggleClass('on');
+    });
+}(jQuery, window, document));
+
+
+/*
+(function ($) {
+    $(window).on("load", function () {
+        $(".hg_wrap").mCustomScrollbar({
+            axis: "y",
+            theme: "minimal"
+        });
+    });
+})(jQuery);
+*/
+
+/*
+$(window).load(function () {
+    $('.cmhm_slider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        slideshow: false,
+        smoothHeight: true,
+        itemWidth: 210,
+        itemMargin: 0,
+        minItems: 1,
+        maxItems: 3
+    });
+});
+*/
+
+/*
+$(window).load(function () {
+    $('.cmj_frame').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        slideshow: false,
+        smoothHeight: true
+    });
+});
+*/
+
+/*
+$(window).load(function () {
+    $('.cms_slider').flexslider({
+        animation: "slide",
+        animationLoop: true,
+        slideshow: false,
+        smoothHeight: true
+    });
+});
+*/
+
+$(document).ready(function () {
+    $('#cmb_play').on('click', function () {
+        if ($('#cmh_video')[0]) {
+            $('#cmh_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'pauseVideo' + '","args":""}', '*');
+        }
+        if ($('#cmb_video')[0]) {
+            $('#cmb_video')[0].contentWindow.postMessage('{"event":"command","func":"' + 'playVideo' + '","args":""}', '*');
+        }
+    });
+	
+
+	$(".cst_subject a").attr("title","닫힘");
+    $(".cst_subject a").click(function() {
+        $(this).parent().next(".cst_contents").slideToggle().children(".cst_contents").hide();
+        var $title1 = $(this)
+			if ($title1.attr("title") == "열림") {
+			$title1.attr("title", "닫힘");
+			} else {
+			$title1.attr("title", "열림");
+			}
+		return false;
+    });
+
+    $(".csvf_subject").click(function() {
+		$(this).next(".csvf_contents").slideToggle().children(".csvf_contents").hide();
+		var $title = $(this)
+			if ($title.attr("title") == "열림") {
+			$title.attr("title", "닫힘");
+			} else {
+			$title.attr("title", "열림");
+			}
+		return false;
+	});
+});
+
+/* 170722 추가 - 이지연 */
+$(document).ready(function () {
+
+    // animation
+    $('.motion').appear(function () {
+        var elem = $(this);
+        var animation = elem.data('animation');
+        if (!elem.hasClass('visible')) {
+            var animationDelay = elem.data('animation-delay');
+            if (animationDelay) {
+                setTimeout(function () {
+                    elem.addClass(animation + " visible");
+                }, animationDelay);
+            } else {
+                elem.addClass(animation + " visible");
+            }
+        }
+    });
+
+
+
+    $(".m_scroll").click(function (event) {
+        event.preventDefault();
+        if ($(this).hasClass('ms_last') === true) {
+            $('html,body').animate({scrollTop: $('#sitemap').offset().top}, 500);
+        } else {
+            $('html,body').animate({scrollTop: $(this).parent().next().offset().top}, 500);
+        }
+    });
+
+    // gallery focus view
+    $('.motion a').focusout(function () {
+        $('.motion').removeClass('on');
+    });
+    $('.motion a').focus(function () {
+        $(this).closest('.motion').addClass('on');
+    });
+
+    $('.btn_close').click(function(){
+        $('.popup_content').removeClass('on');
+        $('.popup_wrap').removeClass('open').addClass('close');
+        $('.popup').delay(300).removeClass('open').addClass('close');
+    });
+    $(document).mousedown(function (e) {
+        $('.popup_wrap').each(function () {
+            if ($(this).hasClass('open') == true) {
+                var l_position = $(this).offset();
+                l_position.right = parseInt(l_position.left) + ($(this).width());
+                l_position.bottom = parseInt(l_position.top) + parseInt($(this).height());
+
+
+                if (( l_position.left <= e.pageX && e.pageX <= l_position.right )
+                    && ( l_position.top <= e.pageY && e.pageY <= l_position.bottom )) {
+                }
+                else {
+                    $('.popup_content').removeClass('on');
+                    $('.popup_wrap').toggleClass('close open');
+                    $('.popup').delay(300).toggleClass('close open');
+                }
+            }
+        });
+    });
+
+    $('.csv_add').click(function(){
+        $('.popup_v').fadeIn();
+        $('.popup_v_wrap').show();
+        $('.popup_csvc_people').show();
+    });
+    $('.btn_csv_close').click(function(){
+        $('.popup_v_content').hide();
+        $('.popup_v_wrap').hide();
+        $('.popup_v').fadeOut();
+    });
+    $(document).mousedown(function(e){
+        $('.popup_v_wrap').each(function(){
+            if( $(this).css('display') == 'block' )
+            {
+                var l_position = $(this).offset();
+                l_position.right = parseInt(l_position.left) + ($(this).width());
+                l_position.bottom = parseInt(l_position.top) + parseInt($(this).height());
+
+
+                if( ( l_position.left <= e.pageX && e.pageX <= l_position.right )
+                    && ( l_position.top <= e.pageY && e.pageY <= l_position.bottom ) )
+                {
+                }
+                else {
+                    $('.popup_v_content').hide();
+                    $('.popup_v_wrap').hide();
+                    $('.popup_v').fadeOut();
+                }
+            }
+        });
+    });
+
+    // main hero slider
+	//이전
+
+    // mobile main slider
+	//이전
+
+    // 관람신청 관람일 달력
+	//이전
+
+});
+
+
+
+
+
+
+
+
+
+/* 20171001 추가 */
+
+$(window).scroll(function() {
+	var cwdTop = $('.navigator_menu').offset().top;
+	var cwd_scroll_top=$(window).scrollTop();
+
+	if (0 < cwd_scroll_top) {
+		$('.navigator_menu').css({'position': 'fixed','top':0});
+		$('.ml0').find('img').css('display','block');
+
+	} else {
+		$('.navigator_menu').css({'position': 'absolute', 'top':'cwd_scroll_top'});
+		$('.ml0').find('img').css('display','none');
+	}
+
+
+	//var cur_scroll_top=$(window).scrollTop();
+
+
+	var cwd_scroll_top=$(window).scrollTop();
+	if(cwd_scroll_top!=0)
+	{
+		$(".head_navi h1").css({"transform":"translate3d(0,-40%,0)"});
+
+		  if(menu_on_check==true)
+		  {
+			//메뉴 들어가거나 안들어가거나 설정
+			top_menu_off();
+		 }
+		 $(".main_logo a").css("padding","15px").css("margin-top","-7px");
+	}
+	else
+	{
+		 $(".head_navi h1").css({"transform":"translate3d(0,0,0)"});
+		 $(".main_logo a").css("padding","0px").css("margin-top","0px");;
+	}
+
+
+	var menu_on_check=false
+	function top_menu_on(){
+		menu_on_check=true
+		$(".main_logo h1").css("width","100px");
+	}
+
+});
+
+
+
+
+
+
+
